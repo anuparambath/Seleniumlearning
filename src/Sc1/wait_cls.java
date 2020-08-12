@@ -22,9 +22,9 @@ public class wait_cls {
 
         ////////////////////////implicit wait///////////////////
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://webapps-qa.homedepot.com/RetailApplicantManagement/#/candidates");
+        driver.get("url");
         WebElement user = driver.findElement(By.name("j_username"));
-        driver.findElement(By.xpath("(//input)[7]")).sendKeys("qa02test");
+        driver.findElement(By.xpath("(//input)[7]")).sendKeys("qt");
         //////////////////////explicit wait/////////////////////////
         WebDriverWait wt = new WebDriverWait(driver,60);
         WebElement username = wt.until(ExpectedConditions.elementToBeClickable(user));
