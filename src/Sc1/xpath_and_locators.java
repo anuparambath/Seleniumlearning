@@ -20,11 +20,11 @@ public class xpath_and_locators {
          driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://webapps-qa.homedepot.com/RetailApplicantManagement/#/candidates");
+        driver.get("url");
         // driver.get("www.google.com");
-        // driver.findElement(By.xpath("//*[@name='j_username']")).sendKeys("qat2407");
-        driver.findElement(By.name("j_username")).sendKeys("qat2407");
-        driver.findElement(By.xpath("(//input)[7]")).sendKeys("qa02test");
+        // driver.findElement(By.xpath("//*[@name='j_username']")).sendKeys("qt");
+        driver.findElement(By.name("j_username")).sendKeys("qt");
+        driver.findElement(By.xpath("(//input)[7]")).sendKeys("qt");
         //(//input)[7]  Xapath using idex
         ////*[text()='Location '] By text
         ////*[contains(@id,'mainUserLocat')]  ---contains
@@ -48,7 +48,7 @@ public class xpath_and_locators {
         WebElement locationtextbox =driver.findElement(By.xpath("//input[@id='mainUserLocation']"));
         locationtextbox.clear();
         locationtextbox.click();
-        locationtextbox.sendKeys("0401");
+        locationtextbox.sendKeys("0000");
 
       //  JavascriptExecutor js = (JavascriptExecutor)driver;
      //   js.executeScript("arguments[0].click();", button);
