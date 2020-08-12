@@ -14,7 +14,7 @@ public class Alerts {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://webapps-qa.homedepot.com/RetailApplicantManagement/#/candidates");
+        driver.get("url");
 
         Alert alert = driver.switchTo().alert();
         alert.accept();
